@@ -11,7 +11,7 @@ public class UsuarioModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "Nombres")
     private String nombres;
     @Column(name = "Apellidos")
@@ -21,11 +21,11 @@ public class UsuarioModel {
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

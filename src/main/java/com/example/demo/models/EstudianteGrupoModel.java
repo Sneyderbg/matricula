@@ -11,15 +11,15 @@ public class EstudianteGrupoModel {
 
     @Id
     @Column(name = "EstudiantesId")
-    private Integer estudiantesId;
+    private Long estudiantesId;
     @Column(name = "GruposId")
     private Integer gruposId;
 
-    public Integer getEstudiantesId() {
+    public Long getEstudiantesId() {
         return estudiantesId;
     }
 
-    public void setEstudiantesId(Integer estudiantesId) {
+    public void setEstudiantesId(Long estudiantesId) {
         this.estudiantesId = estudiantesId;
     }
 

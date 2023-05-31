@@ -9,11 +9,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface MateriaRepository extends CrudRepository<MateriaModel, Integer> {
+public interface MateriaRepository extends CrudRepository<MateriaModel, Long> {
     @Query("select m  from OfertaModel o \n" +
             "inner join MateriaOfertaModel mo on mo.ofertasId = o.id \n" +
             "inner join MateriaModel m on m.id = mo.materiasId \n" +
             "where o.id = :ofertaId")
-    List<MateriaModel> findByOfertaId(Integer ofertaId);
+    List<MateriaModel> findByOfertaId(Long ofertaId);
 
 }

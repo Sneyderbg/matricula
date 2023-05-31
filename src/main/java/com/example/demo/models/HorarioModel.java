@@ -8,7 +8,7 @@ public class HorarioModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "DiaSemana")
     private Integer diaSemana;
     @Column(name = "HoraInicio")
@@ -16,17 +16,17 @@ public class HorarioModel {
     @Column(name = "HoraFin")
     private Integer horaFin;
     @Column(name = "GrupoId")
-    private Integer grupoId;
+    private Long grupoId;
     @Column(name = "CreatedOn")
     private String fechaCreacion;
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -54,11 +54,11 @@ public class HorarioModel {
         this.horaFin = horaFin;
     }
 
-    public Integer getGrupoId() {
+    public Long getGrupoId() {
         return grupoId;
     }
 
-    public void setGrupoId(Integer grupoId) {
+    public void setGrupoId(Long grupoId) {
         this.grupoId = grupoId;
     }
 

@@ -9,7 +9,7 @@ public class MateriaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "Nombre")
     private String nombre;
     @Column(name = "NumeroCreditos")
@@ -21,11 +21,11 @@ public class MateriaModel {
     @Column(name = "Descripcion")
     private String descripcion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

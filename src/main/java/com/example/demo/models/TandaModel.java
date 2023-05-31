@@ -12,7 +12,7 @@ public class TandaModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "Numero")
     private Integer numero;
     @Column(name = "Horario")
@@ -22,11 +22,11 @@ public class TandaModel {
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

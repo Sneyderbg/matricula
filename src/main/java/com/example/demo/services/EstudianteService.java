@@ -36,7 +36,7 @@ public class EstudianteService {
     @Autowired
     MateriaRepository materiaRepository;
 
-    public EstudianteDto obtenerPorIdentificacion(Integer identificacionEstudiante) {
+    public EstudianteDto obtenerPorIdentificacion(Long identificacionEstudiante) {
         EstudianteModel estudiante = estudianteRepository.findById(identificacionEstudiante).get();
         UsuarioModel usuario = usuarioRepository.findById(identificacionEstudiante).get();
         ProgramaModel programa = programaRepository.findById(estudiante.getProgramaId()).get();

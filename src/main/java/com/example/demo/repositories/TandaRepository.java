@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TandaRepository extends CrudRepository<TandaModel, Integer> {
+public interface TandaRepository extends CrudRepository<TandaModel, Long> {
 }

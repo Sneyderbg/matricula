@@ -34,7 +34,7 @@ public class MatriculaService {
         MatriculaModel matriculaSave = matriculaRepository.save(matriculaModel);
 
         List<GrupoMatriculaModel> list = new ArrayList<>();
-        for (int grupoId : matriculaDto.getGruposId()) {
+        for (long grupoId : matriculaDto.getGruposId()) {
             GrupoMatriculaModel gmm = new GrupoMatriculaModel(new GrupoMatriculaKey(grupoId, matriculaSave.getMatriculaId()));
             list.add(gmm);
         }
@@ -42,7 +42,7 @@ public class MatriculaService {
         return matriculaDto;
     }
 
-    public MatriculaDto obtenerMatricula(Integer id) {
+    public MatriculaDto obtenerMatricula(Long id) {
         MatriculaModel matriculaModel = matriculaRepository.findById(id).get();
         List<GrupoMatriculaModel> grupoMatriculaModelList = grupoMatriculaRepository.findByMatriculasId(matriculaModel.getMatriculaId());
         return Factories.matriculaToDtoFatory(matriculaModel, grupoMatriculaModelList);

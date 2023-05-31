@@ -3,21 +3,21 @@ package com.example.demo.dto;
 import java.util.List;
 
 public class MatriculaDto {
-    private Integer estudianteId;
+    private Long estudianteId;
     private String semestre;
-    private List<Integer> gruposId;
+    private List<Long> gruposId;
 
-    public MatriculaDto(Integer estudianteId, String semestre, List<Integer> gruposId) {
+    public MatriculaDto(Long estudianteId, String semestre, List<Long> gruposId) {
         this.estudianteId = estudianteId;
         this.semestre = semestre;
         this.gruposId = gruposId;
     }
 
-    public Integer getEstudianteId() {
+    public Long getEstudianteId() {
         return estudianteId;
     }
 
-    public void setEstudianteId(Integer estudianteId) {
+    public void setEstudianteId(Long estudianteId) {
         this.estudianteId = estudianteId;
     }
 
@@ -29,11 +29,11 @@ public class MatriculaDto {
         this.semestre = semestre;
     }
 
-    public List<Integer> getGruposId() {
+    public List<Long> getGruposId() {
         return gruposId;
     }
 
-    public void setGruposId(List<Integer> gruposId) {
+    public void setGruposId(List<Long> gruposId) {
         this.gruposId = gruposId;
     }
 }

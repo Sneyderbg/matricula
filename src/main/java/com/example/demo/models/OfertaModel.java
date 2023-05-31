@@ -11,21 +11,21 @@ public class OfertaModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "TopeMaximoCreditos")
     private Integer topeMaximoCreditos;
     @Column(name = "ProgramaId")
-    private Integer programaId;
+    private Long programaId;
     @Column(name = "CreatedOn")
     private String fechaCreacion;
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,11 +37,11 @@ public class OfertaModel {
         this.topeMaximoCreditos = topeMaximoCreditos;
     }
 
-    public Integer getProgramaId() {
+    public Long getProgramaId() {
         return programaId;
     }
 
-    public void setProgramaId(Integer programaId) {
+    public void setProgramaId(Long programaId) {
         this.programaId = programaId;
     }
 

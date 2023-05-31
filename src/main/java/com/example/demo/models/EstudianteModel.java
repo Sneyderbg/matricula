@@ -11,47 +11,47 @@ public class EstudianteModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "TandaId")
-    private Integer tandaId;
+    private Long tandaId;
     @Column(name = "ProgramaId")
-    private Integer programaId;
+    private Long programaId;
     @Column(name = "OfertaId")
-    private Integer ofertaId;
+    private Long ofertaId;
     @Column(name = "NroPensum")
     private Integer nroPensum;
     @Column(name = "NroSemestre")
     private Integer nroSemestre;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getTandaId() {
+    public Long getTandaId() {
         return tandaId;
     }
 
-    public void setTandaId(Integer tandaId) {
+    public void setTandaId(Long tandaId) {
         this.tandaId = tandaId;
     }
 
-    public Integer getProgramaId() {
+    public Long getProgramaId() {
         return programaId;
     }
 
-    public void setProgramaId(Integer programaId) {
+    public void setProgramaId(Long programaId) {
         this.programaId = programaId;
     }
 
-    public Integer getOfertaId() {
+    public Long getOfertaId() {
         return ofertaId;
     }
 
-    public void setOfertaId(Integer ofertaId) {
+    public void setOfertaId(Long ofertaId) {
         this.ofertaId = ofertaId;
     }
 

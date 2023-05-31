@@ -2,23 +2,23 @@ package com.example.demo.dto;
 
 public class ProgramaDto {
 
-    private Integer id;
+    private Long id;
     private String nombre;
     private String descripcion;
     private Integer duracionSemestres;
 
-    public ProgramaDto(Integer id, String nombre, String descripcion, Integer duracionSemestres) {
+    public ProgramaDto(Long id, String nombre, String descripcion, Integer duracionSemestres) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.duracionSemestres = duracionSemestres;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

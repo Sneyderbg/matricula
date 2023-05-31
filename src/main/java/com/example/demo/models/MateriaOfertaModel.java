@@ -11,23 +11,23 @@ public class MateriaOfertaModel {
 
     @Id
     @Column(name = "MateriasId")
-    private Integer materiasId;
+    private Long materiasId;
     @Column(name = "OfertasId")
-    private Integer ofertasId;
+    private Long ofertasId;
 
-    public Integer getMateriasId() {
+    public Long getMateriasId() {
         return materiasId;
     }
 
-    public void setMateriasId(Integer materiasId) {
+    public void setMateriasId(Long materiasId) {
         this.materiasId = materiasId;
     }
 
-    public Integer getOfertasId() {
+    public Long getOfertasId() {
         return ofertasId;
     }
 
-    public void setOfertasId(Integer ofertasId) {
+    public void setOfertasId(Long ofertasId) {
         this.ofertasId = ofertasId;
     }
 }

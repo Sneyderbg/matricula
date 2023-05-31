@@ -32,7 +32,7 @@ public class Factories {
     }
 
     public static MatriculaDto matriculaToDtoFatory(MatriculaModel matriculaModel, List<GrupoMatriculaModel> grupoMatriculaModelList) {
-        List<Integer> gruposId = new ArrayList<>();
+        List<Long> gruposId = new ArrayList<>();
         grupoMatriculaModelList.forEach(grupoMatriculaModel -> gruposId.add(grupoMatriculaModel.getGrupoMatriculaKey().getGruposId()));
         return new MatriculaDto(matriculaModel.getEstudianteId(), matriculaModel.getSemestre(), gruposId);
     }

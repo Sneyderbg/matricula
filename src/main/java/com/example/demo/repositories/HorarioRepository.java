@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface HorarioRepository extends CrudRepository<HorarioModel, Integer> {
+public interface HorarioRepository extends CrudRepository<HorarioModel, Long> {
 
-    public List<HorarioModel> findByGrupoId(Integer grupoId);
+    public List<HorarioModel> findByGrupoId(Long grupoId);
 }

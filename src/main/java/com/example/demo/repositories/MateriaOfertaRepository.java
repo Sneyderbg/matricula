@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface MateriaOfertaRepository extends CrudRepository<MateriaOfertaModel, Integer> {
-    public List<MateriaOfertaModel> findByOfertasId(Integer ofertasId);
+public interface MateriaOfertaRepository extends CrudRepository<MateriaOfertaModel, Long> {
+    public List<MateriaOfertaModel> findByOfertasId(Long ofertasId);
 }

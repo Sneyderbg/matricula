@@ -26,7 +26,7 @@ public class OfertaService {
     @Autowired
     MateriaRepository materiaRepository;
 
-    public OfertaDto obtenerPorId(Integer idOferta) {
+    public OfertaDto obtenerPorId(Long idOferta) {
 
         OfertaModel oferta = ofertaRepository.findById(idOferta).get();
         List<MateriaModel> materiasModelList = materiaRepository.findByOfertaId(idOferta);

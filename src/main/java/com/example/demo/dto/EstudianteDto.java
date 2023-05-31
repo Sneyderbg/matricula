@@ -2,16 +2,17 @@ package com.example.demo.dto;
 
 public class EstudianteDto {
 
-    private Integer id;
+    private Long id;
     private String nombres;
     private String apellidos;
     private Integer nroPensum;
     private Integer nroSemestre;
-    private Integer ofertaId;
+    private Long ofertaId;
     private ProgramaDto programa;
     private TandaDto tanda;
 
-    public EstudianteDto(Integer id, String nombres, String apellidos, Integer nroPensum, Integer nroSemestre, Integer ofertaId, ProgramaDto programa, TandaDto tanda) {
+    public EstudianteDto(Long id, String nombres, String apellidos, Integer nroPensum, Integer nroSemestre,
+            Long ofertaId, ProgramaDto programa, TandaDto tanda) {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -22,19 +23,19 @@ public class EstudianteDto {
         this.tanda = tanda;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getOfertaId() {
+    public Long getOfertaId() {
         return ofertaId;
     }
 
-    public void setOfertaId(Integer ofertaId) {
+    public void setOfertaId(Long ofertaId) {
         this.ofertaId = ofertaId;
     }
 

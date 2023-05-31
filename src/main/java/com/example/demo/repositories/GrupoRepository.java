@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 
 @Repository
-public interface GrupoRepository extends CrudRepository<GrupoModel, Integer>{
-    public abstract ArrayList<GrupoModel> findByMateriaId(Integer materiaId);
+public interface GrupoRepository extends CrudRepository<GrupoModel, Long>{
+    public abstract ArrayList<GrupoModel> findByMateriaId(Long materiaId);
 }

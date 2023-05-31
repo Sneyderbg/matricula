@@ -9,9 +9,9 @@ public class GrupoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "MateriaId")
-    private Integer materiaId;
+    private Long materiaId;
     @Column(name = "Modalidad")
     private String modalidad;
     @Column(name = "NumeroGrupo")
@@ -23,19 +23,19 @@ public class GrupoModel {
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getMateriaId() {
+    public Long getMateriaId() {
         return materiaId;
     }
 
-    public void setMateriaId(Integer materiaId) {
+    public void setMateriaId(Long materiaId) {
         this.materiaId = materiaId;
     }
 

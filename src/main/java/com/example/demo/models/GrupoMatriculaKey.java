@@ -8,11 +8,11 @@ import java.io.Serializable;
 public class GrupoMatriculaKey implements Serializable {
 
     @Column(name = "GruposId")
-    private Integer gruposId;
+    private Long gruposId;
     @Column(name = "MatriculasId")
-    private Integer matriculasId;
+    private Long matriculasId;
 
-    public GrupoMatriculaKey(Integer gruposId, Integer matriculasId) {
+    public GrupoMatriculaKey(Long gruposId, Long matriculasId) {
         this.gruposId = gruposId;
         this.matriculasId = matriculasId;
     }
@@ -20,19 +20,19 @@ public class GrupoMatriculaKey implements Serializable {
     public GrupoMatriculaKey() {
     }
 
-    public Integer getGruposId() {
+    public Long getGruposId() {
         return gruposId;
     }
 
-    public void setGruposId(Integer gruposId) {
+    public void setGruposId(Long gruposId) {
         this.gruposId = gruposId;
     }
 
-    public Integer getMatriculasId() {
+    public Long getMatriculasId() {
         return matriculasId;
     }
 
-    public void setMatriculasId(Integer matriculasId) {
+    public void setMatriculasId(Long matriculasId) {
         this.matriculasId = matriculasId;
     }
 }

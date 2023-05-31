@@ -1,18 +1,20 @@
 package com.example.demo.controllers;
 
-import java.util.ArrayList;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.MatriculaDto;
-import com.example.demo.models.MateriaModel;
-import com.example.demo.models.MatriculaModel;
 import com.example.demo.services.MateriaService;
 import com.example.demo.services.MatriculaService;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
 @RestController
-@CrossOrigin(origins = "http://localhost:80")
+@CrossOrigin(origins = "http://localhost")
 @RequestMapping("/matricula")
 public class MatriculaController {
 
@@ -28,7 +30,7 @@ public class MatriculaController {
     }
 
     @GetMapping()
-    public MatriculaDto obtenerMatricula(@RequestParam("id") Integer id) {
+    public MatriculaDto obtenerMatricula(@RequestParam("id") Long id) {
         return this.matriculaService.obtenerMatricula(id);
     }
 

@@ -27,7 +27,7 @@ public class MateriaService {
     HorarioRepository horarioRepository;
 
     //Obtiene las materias con un mismo código, este es el que me tocó a mi, obtener todos los horarios de una materia en especifico, durante la oferta
-    public List<MateriaGrupoDto> obtenerPorCodigo(Integer codigo) {
+    public List<MateriaGrupoDto> obtenerPorCodigo(Long codigo) {
         MateriaModel materia = materiaRepository.findById(codigo).get();
         ArrayList<GrupoModel> grupos = grupoRepository.findByMateriaId(codigo);
         return grupos.stream()
@@ -36,7 +36,7 @@ public class MateriaService {
                         materia.getCreditos(), materia.getDescripcion())).collect(Collectors.toList());
     }
 
-    private List<HorarioDto> obtenerHorarioPorGrupoId(Integer grupoId) {
+    private List<HorarioDto> obtenerHorarioPorGrupoId(Long grupoId) {
         return Factories.horarioToDtoFactory(horarioRepository.findByGrupoId(grupoId));
     }
 }

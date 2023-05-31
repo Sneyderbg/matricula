@@ -9,9 +9,9 @@ public class MatriculaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id")
-    private Integer matriculaId;
+    private Long matriculaId;
     @Column(name = "EstudianteId")
-    private Integer estudianteId;
+    private Long estudianteId;
     @Column(name = "Semestre")
     private String semestre;
     @Column(name = "CreatedOn")
@@ -19,19 +19,19 @@ public class MatriculaModel {
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getMatriculaId() {
+    public Long getMatriculaId() {
         return matriculaId;
     }
 
-    public void setMatriculaId(Integer matriculaId) {
+    public void setMatriculaId(Long matriculaId) {
         this.matriculaId = matriculaId;
     }
 
-    public Integer getEstudianteId() {
+    public Long getEstudianteId() {
         return estudianteId;
     }
 
-    public void setEstudianteId(Integer estudianteId) {
+    public void setEstudianteId(Long estudianteId) {
         this.estudianteId = estudianteId;
     }
 

@@ -4,21 +4,21 @@ import java.util.List;
 
 public class OfertaDto {
 
-    private Integer id;
+    private Long id;
     private Integer topeMaximoCreditos;
     private List<MateriaDto> materiasList;
 
-    public OfertaDto(Integer id, Integer topeMaximoCreditos, List<MateriaDto> materiasList) {
+    public OfertaDto(Long id, Integer topeMaximoCreditos, List<MateriaDto> materiasList) {
         this.id = id;
         this.topeMaximoCreditos = topeMaximoCreditos;
         this.materiasList = materiasList;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

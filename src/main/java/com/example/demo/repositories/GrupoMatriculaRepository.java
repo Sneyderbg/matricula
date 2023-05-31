@@ -11,5 +11,5 @@ import java.util.List;
 @Repository
 public interface GrupoMatriculaRepository extends CrudRepository<GrupoMatriculaModel, GrupoMatriculaKey> {
     @Query("select gmm from GrupoMatriculaModel gmm where gmm.grupoMatriculaKey.matriculasId = :matriculasId")
-    List<GrupoMatriculaModel> findByMatriculasId(Integer matriculasId);
+    List<GrupoMatriculaModel> findByMatriculasId(Long matriculasId);
 }

@@ -11,23 +11,23 @@ public class GrupoProfesorModel {
 
     @Id
     @Column(name = "GruposId")
-    private Integer gruposId;
+    private Long gruposId;
     @Column(name = "ProfesoresId")
-    private Integer profesoresId;
+    private Long profesoresId;
 
-    public Integer getGruposId() {
+    public Long getGruposId() {
         return gruposId;
     }
 
-    public void setGruposId(Integer gruposId) {
+    public void setGruposId(Long gruposId) {
         this.gruposId = gruposId;
     }
 
-    public Integer getProfesoresId() {
+    public Long getProfesoresId() {
         return profesoresId;
     }
 
-    public void setProfesoresId(Integer profesoresId) {
+    public void setProfesoresId(Long profesoresId) {
         this.profesoresId = profesoresId;
     }
 }

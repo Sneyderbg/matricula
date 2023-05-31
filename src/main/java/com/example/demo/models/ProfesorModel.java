@@ -11,23 +11,23 @@ public class ProfesorModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "IdContrato")
-    private Integer idContrato;
+    private Long idContrato;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getIdContrato() {
+    public Long getIdContrato() {
         return idContrato;
     }
 
-    public void setIdContrato(Integer idContrato) {
+    public void setIdContrato(Long idContrato) {
         this.idContrato = idContrato;
     }
 }

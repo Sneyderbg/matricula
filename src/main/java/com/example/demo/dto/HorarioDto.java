@@ -2,23 +2,23 @@ package com.example.demo.dto;
 
 public class HorarioDto {
 
-    private Integer id;
+    private Long id;
     private Integer diaSemana;
     private Integer horaInicio;
     private Integer horaFin;
 
-    public HorarioDto(Integer id, Integer diaSemana, Integer horaInicio, Integer horaFin) {
+    public HorarioDto(Long id, Integer diaSemana, Integer horaInicio, Integer horaFin) {
         this.id = id;
         this.diaSemana = diaSemana;
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

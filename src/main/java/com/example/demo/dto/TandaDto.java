@@ -2,21 +2,21 @@ package com.example.demo.dto;
 
 public class TandaDto {
 
-    private Integer id;
+    private Long id;
     private Integer numero;
     private String horario;
 
-    public TandaDto(Integer id, Integer numero, String horario) {
+    public TandaDto(Long id, Integer numero, String horario) {
         this.id = id;
         this.numero = numero;
         this.horario = horario;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

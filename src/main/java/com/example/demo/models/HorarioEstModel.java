@@ -9,9 +9,9 @@ public class HorarioEstModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
     @Column(name = "grupo")
-    private Integer grupo;
+    private Long grupo;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "creditos")
@@ -26,16 +26,16 @@ public class HorarioEstModel {
     private String profesor;
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
-    public Integer getGrupo() {
+    public Long getGrupo() {
         return grupo;
     }
-    public void setGrupo(Integer grupo) {
+    public void setGrupo(Long grupo) {
         this.grupo = grupo;
     }
     public String getNombre() {
@@ -75,7 +75,7 @@ public class HorarioEstModel {
         this.profesor = profesor;
     }
     
-    public HorarioEstModel(Integer id, Integer grupo, String nombre, Integer creditos, Integer codigo, String horario,
+    public HorarioEstModel(Long id, Long grupo, String nombre, Integer creditos, Integer codigo, String horario,
             String aula, String profesor) {
         this.id = id;
         this.grupo = grupo;

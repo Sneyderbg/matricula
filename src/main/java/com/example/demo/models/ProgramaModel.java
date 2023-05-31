@@ -11,7 +11,7 @@ public class ProgramaModel {
 
     @Id
     @Column(name = "Id")
-    private Integer id;
+    private Long id;
     @Column(name = "Nombre")
     private String nombre;
     @Column(name = "Descripcion")
@@ -23,11 +23,11 @@ public class ProgramaModel {
     @Column(name = "UpdatedOn")
     private String fechaActualizacion;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
